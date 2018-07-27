@@ -27,6 +27,7 @@ class Crop
         @@harvested += (30*crop.size)
       end
     }
+    self.harvested
   end
 
   def self.harvested
@@ -51,13 +52,3 @@ class Crop
     puts "#{corn_count} hectares of tall green stalks rustling in the breeze fill your horizon. The sun hangs low, casting an orange glow on a sea of #{wheat_count} hectares of wheat."
   end
 end
-
-crop1 = Crop.create('corn', 50)
-crop2 = Crop.create('wheat', 40)
-crop3 = Crop.create('corn', 50)
-crop4 = Crop.create('wheat', 40)
-all = Crop.all
-
-Crop.harvest
-Crop.status
-Crop.relax
