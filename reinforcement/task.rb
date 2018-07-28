@@ -5,9 +5,3 @@ class Task
     @description = description
   end
 end
-
-task1 = Task.new('August 1, 2018', 'Buy more groceries')
-task2 = Task.new('August 5, 2018', 'Buy more underwear')
-task1.description = "Eat more vegetables"
-p task1
-p task2
